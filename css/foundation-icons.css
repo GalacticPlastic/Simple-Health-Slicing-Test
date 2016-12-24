@@ -1,9 +1,6 @@
-/* 
- * Foundation Icons v 3.0
+/* Foundation Icons v 3.0
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
- * MIT License
- */
-
+ * MIT License */
 @font-face {
   font-family: "foundation-icons";
   src: url("foundation-icons.eot");
@@ -14,7 +11,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .fi-address-book:before,
 .fi-alert:before,
 .fi-align-center:before,

@@ -23,7 +23,7 @@ $(document).ready(function() {
 // 	   	'&password=' + password;
 // 	   	$.ajax({
 // 	   		type: "POST",
-// 	        url:"http://marymederos.org/simplehealth/contact.php",
+// 	        url:"/contact.php",
 // 	        data: dataString, 
 // 	        success: function(data){
 // 	        	$("#form-message").removeClass("hidden")

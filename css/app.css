@@ -92,9 +92,9 @@ input#password { float: right; }
 	border-radius: 1000px;
 	bottom: -220px;
 	color: #fff;
-	content: '\25B6';
+	content: '\25C0 \FE0E';
 	font-size: 3rem;
-	padding: 25px 25px 15px 30px;
+	padding: 20px 25px 15px 20px;
 	position: relative;
 	z-index: 100;
 }
@@ -103,19 +103,19 @@ input#password { float: right; }
 	margin: -2rem auto 0;
 	text-align: center;
 	width: 620px;
+	max-width: 100%;
 }
-#features, footer {
-	color: #fff;
-	padding: 5rem 7.5rem;
-}
+#features, footer { color: #fff; }
 #features {
-	background: #286df2 url(../imgs/laptop.png) center right no-repeat;
-	background-size: contain;
-	padding-right: 52%;
+	background: #286df2;
+	padding: 5rem 0;
 }
+#feature-left { padding-left: 7.5rem; }
+#feature-right { padding-right: 0; }
+#feature-right img { float: right; }
 #features h2 { text-align: left; }
 .feature { padding: 15px 0; }
-.feature h5, .feature p { font-size: 1rem; }
+.feature h5, .feature p { font-size: 1.2rem; }
 .feature p { padding-right: 2rem; }
 .feature h5 {
 	font-family: 'Montserrat', sans-serif;
@@ -131,6 +131,23 @@ input#password { float: right; }
 .testimonial {
 	margin: 2rem 0;
 	text-align: center;
+}
+.testimonial i {
+	border-radius: 1000px;
+	box-shadow: 0 0 1px #bbb;
+	font-size: 1.5rem;
+    padding: 3px 7px 0;
+    position: relative;
+    right: -110px;
+    top: -25px;
+}
+.fi-social-medium, .fi-social-dropbox { background: #fff; }
+.fi-social-dropbox:before { color: #007ee6; }
+.fi-social-designmodo { background: #426ab5; }
+.fi-social-designmodo img {
+	height: 17px;
+	vertical-align: baseline;
+	width: 17px;
 }
 blockquote:before {
 	content: '\201C';
@@ -160,6 +177,7 @@ footer h4 {
 	font-size: 1.6rem;
 	line-height: 1.75rem;
 	margin-bottom: 0.8rem;
+	padding: 5rem 7.5rem;
 }
 footer nav ul { margin: 0; padding: 0; }
 footer nav ul li { margin-bottom: 1rem; }
@@ -178,12 +196,12 @@ footer i.insta { margin-right: 0; }
 footer a, footer a:hover, footer a:active { color: #ccc; }
 /* ======== RESPONSIVE ======== */
 @media screen and (max-width: 29.99em) {
-	h2 { font-size: 1.6rem; letter-spacing: -1px; }
+	h2 { font-size: 1.6rem; letter-spacing: -1px; line-height: 2rem; }
 	p { font-size: 1rem; line-height: 1.4rem; }
 	header { padding: 2rem; }
 	#top-nav { display: none; }
-	#burger-nav { float: left; width: 30vw; }
-	#subnav { float: right; padding-right: 0; width: 50vw; }
+	#burger-nav { float: left; width: 15vw; }
+	#subnav { float: right; padding-right: 0; width: 65vw; }
 	header h1 {
 		font: bold 4rem/4rem 'Montserrat-Bold', sans-serif;
 		letter-spacing: -0.2rem;
@@ -196,28 +214,26 @@ footer a, footer a:hover, footer a:active { color: #ccc; }
 	}
 	#contact { max-width: 100%; }
 	#form-submit { font-size: 0.65rem; width: 55%; }
-	#about, #features, #testimonials, footer { padding: 2rem 1rem 1.5rem; }
-	#about p { font-size: 1.2rem; margin-top: 0; }
+	#about, #testimonials, footer { padding: 2rem 1rem 1.5rem; }
+	#about p { font-size: 1.2rem; line-height: 1.6rem; margin-top: 0; }
 	#about a:before {
 		border-radius: 1000px;
-		bottom: -150px;
+		bottom: -125px;
 		font-size: 2rem;
-		padding: 15px 15px 10px 20px;
+		padding: 13px 15px 10px 12px;
 	}
 	#about a { margin: -2rem auto 1rem; width: 100%; }
-	#features {
-		background: #286df2 url(../imgs/laptop.png) bottom right no-repeat;
-		background-size: contain;
-		padding-bottom: 380px;
-		padding-right: 0;
-	}
-	#features p { font-size: 1.1rem; }
+	#features { padding: 2rem 0 1.5rem; }
+	#features p { font-size: 0.95rem; padding: 0 1rem; }
+	#feature-left { padding: 0; text-align: center; }
+	#feature-left img { margin: 0 auto 10px; }
 	#about p, #features h2, #testimonials p, footer h4 { text-align: center; }
 	#features h2, #testimonials h2 { font-size: 1.8rem; }
 	.testimonial { margin: 0.5rem 0 1.5rem; }
 	cite { line-height: 0.9rem; }
 	footer { text-align: center; }
-	footer nav ul { margin: 1rem 0 2.5rem; }
+	footer h4 { padding: 0; }
+	footer nav ul { margin: 1rem 0 1.5rem; }
 }
 @media screen and (min-width: 30em) and (max-width: 59.99em) {
 	header { padding: 2rem; }
@@ -241,14 +257,11 @@ footer a, footer a:hover, footer a:active { color: #ccc; }
 	#about p { margin-top: 1rem; }
 	#about a:before { bottom: -240px; }
 	#about a { margin: -3rem auto 1rem; }
-	#features {
-		background: #286df2 url(../imgs/laptop.png) bottom right no-repeat;
-		background-size: 50%;
-		padding-bottom: 380px;
-		padding: 2rem 40% 2rem 2rem;
-	}
-	#features p { font-size: 1.1rem; }
+	#features { padding: 2rem 0; }
+	#feature-left { padding-left: 2rem; }
+	#features p { font-size: 1rem; }
 	footer { padding: 2rem; }
+	footer h4 { padding: 0; }
 	.testimonial { margin: 1rem 0; }
 	blockquote {
 		font-size: 1.1rem;
@@ -256,7 +269,7 @@ footer a, footer a:hover, footer a:active { color: #ccc; }
 		padding: 0.5rem 1rem;
 	}
 	footer { text-align: center; }
-	footer ul { padding: 0 !important; }
+	footer ul { padding: 15px 0 !important; }
 	footer i { margin-right: 1rem; }
 	footer p {
 		font: normal 0.85rem/1.5rem 'PT Serif', serif;
@@ -281,5 +294,6 @@ footer a, footer a:hover, footer a:active { color: #ccc; }
 		min-height: 180px;
 		padding: 0.5rem 1rem;
 	}
-	#features { padding: 4rem 45% 6rem 3rem; }
+	#features { padding: 4rem 0; }
+	#feature-left { padding-left: 2rem; }
 }
