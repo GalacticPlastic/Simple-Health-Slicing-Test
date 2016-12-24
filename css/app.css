@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif|Coustard');
+body { font: 'PT Serif', serif; }
+header {
+	background: url(../imgs/header.jpg) top left no-repeat;
+	background-size: cover;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	padding: 3rem 7.5rem 8rem;
+}
+h1, h2, header p {
+	text-align: center;
+}
+p { font-size: 1.25rem; }
+header h2 {
+	clear: both;
+	font-size: 2.5rem;
+	padding-top: 10rem;
+}
+header h1 {
+	font: bold 6rem/6rem 'Montserrat-Bold', sans-serif;
+	letter-spacing: -0.3rem;
+}
+header p {
+	font: 1.55rem/2rem 'PT Serif', serif;
+	letter-spacing: -0.5px;
+	margin: 2em auto 2em;
+	max-width: 30vw;
+	opacity: 0.75;
+}
+h2 {
+	font: bold 3.5rem/3.5rem 'Montserrat-Bold', sans-serif;
+	letter-spacing: -0.1rem;
+}
+#burger-nav { padding-left: 0; }
+header ul, header ul li, footer ul, footer ul li { list-style: none; }
+header ul { text-align: center; }
+header ul li {
+	display: inline;
+	font-weight: bold;
+	padding-right: 2em;
+}
+header a { color: #fff; }
+#subnav { text-align: right; }
+#subnav a {
+	font-size: 0.7rem;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 2em;
+	text-transform: uppercase;
+}
+#subnav a.button {
+	background-color: #fff;
+	color: #111;
+	padding: 0.5rem 2em;
+}
+#subnav a:last-of-type { padding-right: 0; }
+#contact, #form-submit { margin: 0 auto; }
+#contact { max-width: 55%; }
+#contact input {
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 6px;
+	border-color: #555;
+	padding: 12px 10px;
+}
+input#email, input#password {
+	display: inline-block;
+	margin-bottom: 40px;
+	width: 49%;
+}
+input#email { float: left; }
+input#password { float: right; }
+#form-submit {
+	background: #286df2;
+	display: block;
+	font-size: 0.7rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+	text-transform: uppercase;
+	width: 35%;
+}
+#about, #testimonials { padding: 5rem 0; }
+#about p {
+	color: #656b6e;
+	font: 1.35rem/2rem 'PT Serif', serif;
+	letter-spacing: -0.5px;
+	margin: 1.5em auto 0;
+	text-align: center;
+}
+#about a:before {
+	background: #286df2;
+	border-radius: 1000px;
+	bottom: -220px;
+	color: #fff;
+	content: '\25B6';
+	font-size: 3rem;
+	padding: 25px 25px 15px 30px;
+	position: relative;
+	z-index: 100;
+}
+#about a {
+	display: block;
+	margin: -2rem auto 0;
+	text-align: center;
+	width: 620px;
+}
+#features, footer {
+	color: #fff;
+	padding: 5rem 7.5rem;
+}
+#features {
+	background: #286df2 url(../imgs/laptop.png) center right no-repeat;
+	background-size: contain;
+	padding-right: 52%;
+}
+#features h2 { text-align: left; }
+.feature { padding: 15px 0; }
+.feature h5, .feature p { font-size: 1rem; }
+.feature p { padding-right: 2rem; }
+.feature h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.feature img {
+	display: block;
+	height: 30px;
+	margin-bottom: 15px;
+	width: 29px;
+}
+.testimonial {
+	margin: 2rem 0;
+	text-align: center;
+}
+blockquote:before {
+	content: '\201C';
+	font: bold 3rem/1.5rem 'Coustard', serif;
+	opacity: 0.25;
+}
+blockquote:before, cite strong, footer h4 strong { display: block; }
+cite strong {
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 0.5rem;
+	text-transform: uppercase;
+}
+.reveal-modal.large {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	left: 0;
+	margin: 15vh auto 0;
+	max-width: 55.55556rem;
+	padding: 30px;
+	right: 0;
+	width: 75%;
+}
+/* ======== FOOTER ======== */
+footer { background: #3b3d40; font-family: 'Montserrat', sans-serif; }
+footer h4 {
+	font-size: 1.6rem;
+	line-height: 1.75rem;
+	margin-bottom: 0.8rem;
+}
+footer nav ul { margin: 0; padding: 0; }
+footer nav ul li { margin-bottom: 1rem; }
+footer nav ul li a { color: #fff; font-weight: bold; }
+footer p {
+	color: #999;
+	font: normal 0.95rem/1.7rem 'PT Serif', serif;
+	padding-right: 1vw;
+}
+footer i {
+	font-size: 2rem;
+	margin-right: 2rem;
+	opacity: 0.25;
+}
+footer i.insta { margin-right: 0; }
+footer a, footer a:hover, footer a:active { color: #ccc; }
+/* ======== RESPONSIVE ======== */
+@media screen and (max-width: 29.99em) {
+	h2 { font-size: 1.6rem; letter-spacing: -1px; }
+	p { font-size: 1rem; line-height: 1.4rem; }
+	header { padding: 2rem; }
+	#top-nav { display: none; }
+	#burger-nav { float: left; width: 30vw; }
+	#subnav { float: right; padding-right: 0; width: 50vw; }
+	header h1 {
+		font: bold 4rem/4rem 'Montserrat-Bold', sans-serif;
+		letter-spacing: -0.2rem;
+	}
+	header h2 { font-size: 1.55rem; padding-top: 2.5rem; }
+	header p {
+		font: 1.2rem/1.5rem 'PT Serif', serif;
+		margin: 1em auto;
+		max-width: 80vw;
+	}
+	#contact { max-width: 100%; }
+	#form-submit { font-size: 0.65rem; width: 55%; }
+	#about, #features, #testimonials, footer { padding: 2rem 1rem 1.5rem; }
+	#about p { font-size: 1.2rem; margin-top: 0; }
+	#about a:before {
+		border-radius: 1000px;
+		bottom: -150px;
+		font-size: 2rem;
+		padding: 15px 15px 10px 20px;
+	}
+	#about a { margin: -2rem auto 1rem; width: 100%; }
+	#features {
+		background: #286df2 url(../imgs/laptop.png) bottom right no-repeat;
+		background-size: contain;
+		padding-bottom: 380px;
+		padding-right: 0;
+	}
+	#features p { font-size: 1.1rem; }
+	#about p, #features h2, #testimonials p, footer h4 { text-align: center; }
+	#features h2, #testimonials h2 { font-size: 1.8rem; }
+	.testimonial { margin: 0.5rem 0 1.5rem; }
+	cite { line-height: 0.9rem; }
+	footer { text-align: center; }
+	footer nav ul { margin: 1rem 0 2.5rem; }
+}
+@media screen and (min-width: 30em) and (max-width: 59.99em) {
+	header { padding: 2rem; }
+	#top-nav { display: none; }
+	#burger-nav { float: left; width: 30vw; }
+	#subnav { float: right; padding-right: 0; width: 50vw; }
+	header h1 {
+		font: bold 4.25rem/4.25rem 'Montserrat-Bold', sans-serif;
+		letter-spacing: -0.2rem;
+	}
+	header h2 { padding-top: 5rem; }
+	header p {
+		font: 1.5rem/1.5rem 'PT Serif', serif;
+		margin: 1em auto;
+		max-width: 80vw;
+	}
+	#contact { max-width: 75%; }
+	#form-submit { font-size: 0.75rem; width: 40%; }
+	#about, #testimonials { padding: 3rem 0 1.5rem; }
+	#about h2 { font-size: 2.5rem; }
+	#about p { margin-top: 1rem; }
+	#about a:before { bottom: -240px; }
+	#about a { margin: -3rem auto 1rem; }
+	#features {
+		background: #286df2 url(../imgs/laptop.png) bottom right no-repeat;
+		background-size: 50%;
+		padding-bottom: 380px;
+		padding: 2rem 40% 2rem 2rem;
+	}
+	#features p { font-size: 1.1rem; }
+	footer { padding: 2rem; }
+	.testimonial { margin: 1rem 0; }
+	blockquote {
+		font-size: 1.1rem;
+		min-height: auto;
+		padding: 0.5rem 1rem;
+	}
+	footer { text-align: center; }
+	footer ul { padding: 0 !important; }
+	footer i { margin-right: 1rem; }
+	footer p {
+		font: normal 0.85rem/1.5rem 'PT Serif', serif;
+		padding-right: 0;
+		text-align: left;
+	}
+}
+@media screen and (min-width: 60em) and (max-width: 75em) {
+	header { padding: 2.3rem 5rem 5rem; }
+	/*#top-nav { display: none; }
+	#burger-nav { float: left; width: 30vw; }
+	#subnav { float: right; padding-right: 0; width: 50vw; }*/
+	header h1 {
+		font: bold 5rem/5rem 'Montserrat-Bold', sans-serif;
+		letter-spacing: -0.2rem;
+	}
+	#contact { max-width: 65%; }
+	#form-submit { font-size: 0.75rem; width: 40%; }
+	#about, #features, #testimonials, footer { padding: 3rem 2rem 2rem; }
+	blockquote {
+		font-size: 1.1rem;
+		min-height: 180px;
+		padding: 0.5rem 1rem;
+	}
+	#features { padding: 4rem 45% 6rem 3rem; }
+}
